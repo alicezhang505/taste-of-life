@@ -1,31 +1,28 @@
-This directory contains one express servers:
-* Server.js + App.js - Encapsulated Node/Express web server w/ Mongo Access
+# Tasteoflife
 
-File content:
-* Server.ts - based http server
-* App.ts - express server
-* DbClient.ts - mongo db client
-* DB population files are stored on the createDB file
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
 
-Make sure you install the node.js server and Mongo DB sofware from the side.  Ensure your path variable contains the execution path of the node.js and mongo binary.
+## Development server
 
-To execute the server db and then the node server with the following commands:
+Run `ng serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
-//create the db file directory
-0. md db
+## Code scaffolding
 
-//Starts the DB server on port 3000
-1. start.toDoSample.cmd
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-//populate the DB server with sample data
-2. startdbClient.toDoSample.cmd
->load ('createToDoSampleData.js');
->exit
+## Build
 
-//Starts Node/Express server on port 8080
-3. node Server.js 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-To test server #3, try the following URL on the browser, while the server is running:
-* http://localhost:8080/
-* http://localhost:8080/app/list
-* http://localhost:8080/app/list/1
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
